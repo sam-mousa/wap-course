@@ -1,0 +1,27 @@
+html{
+    background-color: #85898e;
+}
+#main_head_font{
+    font-size: 28px;
+    font-weight: 699;
+}
+.headersColor{
+    color: #91c8ff;
+}
+.boldText {
+    font-weight: 700;
+    color:#ede507;
+}
+
+.font_italic{
+    font-style: italic;
+}
+
+.linkColor{
+    color: #3266a8;
+    text-decoration: none;
+}
+
+.linkColor:visited{
+    color: #3266a8;
+}
