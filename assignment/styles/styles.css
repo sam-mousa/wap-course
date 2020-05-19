@@ -5,6 +5,10 @@ html{
     font-size: 28px;
     font-weight: 700;
 }
+#profile_image {
+    border-radius: 50%;
+}
+
 .headersColor{
     color: #91c8ff;
 }
@@ -17,11 +21,19 @@ html{
     font-style: italic;
 }
 
-.linkColor{
+.link_color{
     color: #3266a8;
     text-decoration: none;
 }
 
-.linkColor:visited{
+.link_color:visited{
     color: #3266a8;
+}
+
+.first_letter_decoration::first-letter {
+    font-size: 1.5em;
+    color: #8A2BE2;
+}
+.link_color:hover {
+    text-decoration: underline;
 }
