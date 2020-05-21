@@ -20,8 +20,8 @@
                 <label><input class="width_16" name="userBOD" type="date" /></label>
                 <span>Telephone</span>
                 <label><input class="width_16" name="userTel" type="tel" placeholder="(012) 345-6789" pattern="[/(][0-9]{3}[/)][0-9]{3}-[0-9]{4}" required/></label>
-                <span>SNN</span>
-                <label><input class="width_16" name="userSNN" placeholder="123-12-1234" pattern="^\d{3}-\d{2}-\d{4}$" required/></label>
+                <span>SSN</span>
+                <label><input class="width_16" name="userSSN" placeholder="123-12-1234" pattern="^\d{3}-\d{2}-\d{4}$" required/></label>
                 <span>Email</span>
                 <label><input class="width_16" name="userEmail" type="email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/></label>
             </fieldset>
@@ -35,7 +35,7 @@
                 <br><br>
                 <label><span>City</span><input class="width_24" name="cityBillAdd" placeholder="FairField"/></label>
                 <label><span>State</span><input  class="width_24" name="stateBillAdd" placeholder="Iowa"/></label>
-                <label><span>Zip Code</span><input  class="width_24" name="zipBillAdd" placeholder="12345" pattern="[0-9]{5}"/></label>
+                <label><span>Zip Code</span><input required class="width_24" name="zipBillAdd" placeholder="12345" pattern="[0-9]{5}"/></label>
             </fieldset>
             <fieldset>
                 <legend>Shipping Address</legend>
@@ -45,7 +45,7 @@
                 <br><br>
                 <label><span>City</span><input  class="width_24" name="cityShipAdd" placeholder="FairField"/></label>
                 <label><span>State</span><input  class="width_24" name="stateBillAdd"  placeholder="Iowa" /></label>
-                <label><span>Zip Code</span><input  class="width_24" name="zipShipAdd"  placeholder="12345" pattern="[0-9]{5}"/></label>
+                <label><span>Zip Code</span><input required class="width_24" name="zipShipAdd"  placeholder="12345" pattern="[0-9]{5}"/></label>
             </fieldset>
             <fieldset>
                 <legend>Payment Info</legend>
