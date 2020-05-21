@@ -128,6 +128,9 @@ body, html {
 }
 a {color: blue;}         
 a:visited {color:blue} 
+.italic_text{
+    font-style: italic;
+}
 
 
 @media screen and (max-width: 600px) {
