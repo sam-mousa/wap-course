@@ -12,52 +12,53 @@
             <fieldset>
                 <legend>User Information</legend>
                 <span >First Name</span>
-                <label><input  class="width_40" name="fName" placeholder="First Name"/></label>
+                <label><input  class=" width_80" name="fName" placeholder="First Name"/></label>
+                <br><br>
                 <span >Last Name</span>
-                <label><input class="width_40" name="lName" placeholder="Last Name" /></label>
+                <label><input class=" width_80" name="lName" placeholder="Last Name" /></label>
                 <br><br>
                 <span  >Birth Of Date</span>
-                <label><input class="width_16" name="userBOD" type="date" /></label>
+                <label><input class=" width_12" name="userBOD" type="date" /></label>
                 <span>Telephone</span>
-                <label><input class="width_16" name="userTel" type="tel" placeholder="(012) 345-6789" pattern="[/(][0-9]{3}[/)][0-9]{3}-[0-9]{4}" required/></label>
+                <label><input class=" width_12" name="userTel" type="tel" placeholder="(012) 345-6789" pattern="[/(][0-9]{3}[/)][0-9]{3}-[0-9]{4}" required/></label>
                 <span>SSN</span>
-                <label><input class="width_16" name="userSSN" placeholder="123-12-1234" pattern="^\d{3}-\d{2}-\d{4}$" required/></label>
+                <label><input class=" width_12" name="userSSN" placeholder="123-12-1234" pattern="^\d{3}-\d{2}-\d{4}$" required/></label>
                 <span>Email</span>
-                <label><input class="width_16" name="userEmail" type="email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/></label>
+                <label><input class=" width_12" name="userEmail" type="email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/></label>
             </fieldset>
             <fieldset>
                 <legend>Billing Address</legend>
                 <label><span>Adress</span>
-                <input class="width_86" name="stBillAdd" placeholder="1000 N 4th Street"/></label>
+                <input class=" width_80" name="stBillAdd" placeholder="1000 N 4th Street"/></label>
                 <br><br>
                 <label><span >Adress 2</span>
-                <input class="width_86" name="st2BillAdd" placeholder="BLD 123"/></label>
+                <input class=" width_80" name="st2BillAdd" placeholder="BLD 123"/></label>
                 <br><br>
-                <label><span>City</span><input class="width_24" name="cityBillAdd" placeholder="FairField"/></label>
-                <label><span>State</span><input  class="width_24" name="stateBillAdd" placeholder="Iowa"/></label>
-                <label><span>Zip Code</span><input required class="width_24" name="zipBillAdd" placeholder="12345" pattern="[0-9]{5}"/></label>
+                <label><span>City</span><input class="width_20" name="cityBillAdd" placeholder="FairField"/></label>
+                <label><span>State</span><input  class="width_20" name="stateBillAdd" placeholder="Iowa"/></label>
+                <label><span>Zip Code</span><input required class="width_20" name="zipBillAdd" placeholder="12345" pattern="[0-9]{5}"/></label>
             </fieldset>
             <fieldset>
                 <legend>Shipping Address</legend>
-                <label><span>Address</span><input  class="width_86" name="stShipAdd" placeholder="1000 N 4th Street"/></label>
+                <label><span>Address</span><input  class=" width_80" name="stShipAdd" placeholder="1000 N 4th Street"/></label>
                 <br><br>
-                <label><span>Address 2</span><input  class="width_86" name="st2ShipAdd" placeholder="BLD 123" /></label>
+                <label><span>Address 2</span><input  class=" width_80" name="st2ShipAdd" placeholder="BLD 123" /></label>
                 <br><br>
-                <label><span>City</span><input  class="width_24" name="cityShipAdd" placeholder="FairField"/></label>
-                <label><span>State</span><input  class="width_24" name="stateBillAdd"  placeholder="Iowa" /></label>
-                <label><span>Zip Code</span><input required class="width_24" name="zipShipAdd"  placeholder="12345" pattern="[0-9]{5}"/></label>
+                <label><span>City</span><input  class="width_20" name="cityShipAdd" placeholder="FairField"/></label>
+                <label><span>State</span><input  class="width_20" name="stateBillAdd"  placeholder="Iowa" /></label>
+                <label><span>Zip Code</span><input required class="width_20" name="zipShipAdd"  placeholder="12345" pattern="[0-9]{5}"/></label>
             </fieldset>
             <fieldset>
                 <legend>Payment Info</legend>
                 <input type="radio" name="cc" value="visa" checked /><span>Visa</span>
                 <input type="radio" name="cc" value="mastercard" /><span>MasterCard</span>
-                <input type="radio" name="cc" value="amex" /><span class="width_13">American Express</span>
+                <input type="radio" name="cc" value="amex" /><span class="width_15">American Express</span>
                 <br><br>
-                <span class="width_13">Name on Card</span>
-                <label><input name="cardName"  class="width_80" placeholder="John More Doe"/></label>
+                <span class="width_15">Name on Card</span>
+                <label><input name="cardName"  class=" width_75" placeholder="John More Doe"/></label>
                 <br><br>
-                <span class="width_13">Credit card number</span>
-                <label><input name="cardNumber"  class="width_80" placeholder="1111-2222-3333-4444"/></label>
+                <span class="width_15">Credit card number</span>
+                <label><input name="cardNumber"  class=" width_75" placeholder="1111-2222-3333-4444"/></label>
                 <br><br>
                 <span>Exp Month</span>
                 <select name="cardMonth">
@@ -75,9 +76,9 @@
                     <option>December</option>
                 </select>
                 <span>Exp Year</span>
-                <label><input name="cardYear" class="width_32"  placeholder="2020" type="number"/></label>
+                <label><input name="cardYear" class="width_25"  placeholder="2020" type="number"/></label>
                 <span>CVV</span>
-                <label><input name="cardCVV" class="width_32" placeholder="123" type="number" /></label>
+                <label><input name="cardCVV" class="width_25" placeholder="123" type="number" /></label>
             </fieldset>
             <fieldset>
                 <legend>Terms and Agreement</legend>
