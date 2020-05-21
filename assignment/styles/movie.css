@@ -52,8 +52,12 @@ body, html {
     width: 70%;
     margin: auto;
     border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    overflow:hidden;
     border: 3px solid gray;
 }
+
 .details_backgroun{
     background: #A2B964;
 }
