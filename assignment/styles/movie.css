@@ -80,6 +80,7 @@ body, html {
     font-weight: bold;
     display: inline-block;
 }
+
 .validation_position{
     position: fixed;
     bottom: 0px;

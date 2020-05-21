@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment</title>
+    <link href="./styles/form.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>User Information</legend>
+                <span>First Name</span>
+                <label><input class="width_40" name="fName" placeholder="First Name"/></label>
+                <span>Last Name</span>
+                <label><input class="width_40" name="lName" placeholder="Last Name" /></label>
+                <br><br>
+                <span>Birth Of Date</span>
+                <label><input class="width_20" name="userBOD" type="date" /></label>
+                <span>Telephone</span>
+                <label><input class="width_20" name="userTel" type="tel" placeholder="(012) 345-6789" pattern="[/(][0-9]{3}[/)][0-9]{3}-[0-9]{4}" required/></label>
+                <span>SNN</span>
+                <label><input class="width_20" name="userSNN" placeholder="123-12-1234" pattern="^\d{3}-\d{2}-\d{4}$" required/></label>
+                <span>Email</span>
+                <label><input class="width_20" name="userEmail" type="email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/></label>
+            </fieldset>
+            <fieldset>
+                <legend>Billing Address</legend>
+                <label><span>Adress</span><input name="stBillAdd" placeholder="1000 N 4th Street"/></label>
+                <br><br>
+                <label><span>Adress 2</span><input name="st2BillAdd" placeholder="BLD 123"/></label>
+                <br><br>
+                <label><span>City</span><input name="cityBillAdd" placeholder="FairField"/></label>
+                <label><span>State</span><input name="stateBillAdd" placeholder="Iowa"/></label>
+                <label><span>Zip Code</span><input name="zipBillAdd" placeholder="12345" pattern="[0-9]{5}"/></label>
+            </fieldset>
+            <fieldset>
+                <legend>Shipping Address</legend>
+                <label><span>Address</span><input name="stShipAdd" placeholder="1000 N 4th Street"/></label>
+                <br><br>
+                <label><span>Address 2</span><input name="st2ShipAdd" placeholder="BLD 123" /></label>
+                <br><br>
+                <label><span>City</span><input name="cityShipAdd" placeholder="FairField"/></label>
+                <label><span>State</span><input name="stateBillAdd"  placeholder="Iowa" /></label>
+                <label><span>Zip Code</span><input name="zipShipAdd"  placeholder="12345" pattern="[0-9]{5}"/></label>
+            </fieldset>
+            <fieldset>
+                <legend>Payment Info</legend>
+                <input type="radio" name="cc" value="visa" checked /><span>Visa</span>
+                <input type="radio" name="cc" value="mastercard" /><span>MasterCard</span>
+                <input type="radio" name="cc" value="amex" /><span>American Express</span>
+                <br><br>
+                <span>Name on Card</span>
+                <label><input name="cardName"  placeholder="John More Doe"/></label>
+                <br><br>
+                <span>Credit card number</span>
+                <label><input name="cardNumber"  placeholder="1111-2222-3333-4444"/></label>
+                <br><br>
+                <span>Exp Month</span>
+                <select name="cardMonth">
+                    <option selected>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September </option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <span>Exp Year</span>
+                <label><input name="cardYear"  placeholder="2020"/></label>
+                <span>CVV</span>
+                <label><input name="cardCVV"  placeholder="123" /></label>
+            </fieldset>
+            <fieldset>
+                <legend>Terms and Agreement</legend>
+                <p>
+                    1 - The Intellectual Property disclosure will inform users that the contents, logo and other
+                    visual media you created is your property and is protected by copyright laws.
+                </p>
+                <p>
+                    2 - A Termination clause will inform that users' accounts on your website and mobile app or
+                    users' access to your website and mobile (if users can't have an account with you) can be
+                    terminated in case of abuses or at your sole discretion.
+                </p>
+                <p>
+                    3 - A Governing Law will inform users which laws govern the agreement. This should the
+                    country in which your company is headquartered or the country from which you operate your
+                    website and mobile app.
+                </p>
+                <input type="checkbox" name="lettuce" required/>
+                <span>I agree to the Terms and Conditions</span>
+            </fieldset>
+            <span>Submit</span>
+            <label><input name="submit" type="submit"/></label>
+        </form>
+    </div>
+    <p>
+        <a href="https://validator.w3.org/check/referer">
+            <img src="./src/valid-xhtml10.png" alt="Validate" />
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+    </p>
+</body>
+
+</html>
