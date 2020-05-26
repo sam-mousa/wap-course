@@ -17,7 +17,7 @@ function biggerFontTimer() {
     let element = document.getElementById("user_text");
 
     var style = window.getComputedStyle(element).fontSize;
-    var fontSize = parseInt(style); 
+    var fontSize = Math.ceil(parseInt(style) * 72 / 96); 
     //alert(fontSize);
 
     if(x){
