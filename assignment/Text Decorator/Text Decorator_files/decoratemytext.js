@@ -25,7 +25,7 @@ function biggerFontTimer() {
         element.style.fontSize = (fontSize + 2) + 'pt';
     }else{
         element.style.fontSize = (fontSize + 2) + 'pt';
-    }
+    } 
 }
 
 function biggerFontTimerInterval(){
