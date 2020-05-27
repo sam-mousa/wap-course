@@ -1,7 +1,7 @@
 function alertFn(){
-alert("Hello, world");
+    alert("Hello, world");
 }
-alert(5+'3'*2+"4"/2);
+
 function biggerFont() {
     var x = document.getElementById("biling_checkbox").checked;
     let element = document.getElementById("user_text");
