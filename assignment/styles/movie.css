@@ -13,16 +13,6 @@ body, html {
     font-family: Verdana, Tahoma, sans-serif ;
 }
 
-.text_center{
-    text-align: center;
-}
-.title_font_size{
-    font-size:  24pt;
-    font-weight: bold;
-    font-family:  Tahoma, Verdana,  sans-serif ;
-    text-shadow: 3px 3px #999999;
-}
-
 .col-1 {width: 8.3%;} 
 .col-2 {width: 16.6%;} 
 .col-3 {width: 25%;}
@@ -51,6 +41,17 @@ body, html {
     clear: both; 
     display: table;
 }
+
+.text_center{
+    text-align: center;
+}
+.title_font_size{
+    font-size:  24pt;
+    font-weight: bold;
+    font-family:  Tahoma, Verdana,  sans-serif ;
+    text-shadow: 3px 3px #999999;
+}
+
 .main_container{
     width: 70%;
     margin: auto;

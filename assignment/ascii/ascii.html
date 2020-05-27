@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./ascii.css" type="text/css" rel="stylesheet">
+    <script src="./animations.js"></script>
+    <script src="./ascii.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="text_align_center margin_auto col-12 main_container">
+        <p class="text_align_center address_bar">CSE 190 M ASCCII ANIMATION VIEWER</p>
+        <textarea rows="20" cols="80" id="textarea" class="tiny_size"></textarea>
+        <div class="row ">
+            <div class="row margin_auto">
+                <fieldset>
+                    <legend>Play Control:</legend>
+                    <button onclick="start()" id="start_but" class="start_but">Start</button>
+                    <button onclick="stop()" id="stop_but" class="stop_but" disabled>Stop</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Animation:</legend>
+                    <select name="animation" id="animation" onchange="selectedAnimation()">
+                        <option selected>blank</option>
+                        <option>Exercise</option>
+                        <option>Juggler</option>
+                        <option>Bike</option>
+                        <option>Dive</option>
+                        <option>Custom</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <select name="size" id="size" onchange="selectedSize()" >
+                        <option selected>Tiny</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>Extra Large</option>
+                        <option>XXL</option>
+                    </select>  
+                </fieldset>
+                <fieldset>
+                    <legend>Speed:</legend>
+                    <label><input type="checkbox" name="turbo" id="turbo" onchange="turboSpeed()"/>Turbo</label>
+                </fieldset>
+            </div>
+        </div>
+        <p>
+            <a href="https://validator.w3.org/check/referer">
+                <img src="../src/valid-xhtml10.png" alt="Validate" />
+            </a>
+        <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+        </p>
+        <p>
+            <a href="https://webster.cs.washington.edu/jslint/?referer">
+                <img src="https://webster.cs.washington.edu/w3c-js.png" alt="Valid JS" />
+                </a>
+        </p>
+    </div>
+
+</body>
+
+</html>
