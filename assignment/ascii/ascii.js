@@ -16,6 +16,8 @@ function selectedAnimation(){
         textareaValue.value = DIVE;
     }else if(animationValue.value == "Juggler"){
         textareaValue.value = JUGGLER;
+    }else if(animationValue.value == "Custom"){
+        textareaValue.value = CUSTOM;
     }else {
 
     }
