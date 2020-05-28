@@ -70,6 +70,14 @@ button, select{
     width: 90px;
     height: 30px;
 }
+.validate_p{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+.validate_p a{
+    padding: 10px;
+}
 .tiny_size{ font-size:  7pt;}
 .small_size{ font-size:  10pt;}
 .medium_size{ font-size:  12pt;}
