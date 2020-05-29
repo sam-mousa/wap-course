@@ -1,0 +1,34 @@
+<!--
+    I added some EXTRA function on requested Home work
+    I made check and Alearts for Empty or not a number of inputs
+    I made balance you can add deposit for it if the account name is already exist 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <script src="./account_module.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Please Enter Your Name"/>
+        <br><br>
+        <label for="deposit">Deposit</label>
+        <input type="number" name="deposit" id="deposit" placeholder="Please Enter Your Deposit"/>
+        <br><br>
+        <button name="button" id="addBut" onclick="AccountModule.addAccount()">Add</button>
+        <br>
+        <p class="hint_style">If the Account is already exist it will look for it and add the deposit if not it will create a new account and add it to the list</p>
+        <p id=""></p>
+        <br>
+        <p id="text" class="element_invisable alert">Plase Enter Your <span id="addText"></span></p>
+        <br>
+        <textarea id="textarea" name="textarea" disabled></textarea>
+    </div>
+</body>
+</html>

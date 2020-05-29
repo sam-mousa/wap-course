@@ -4,8 +4,7 @@ let currentIndex = 0;
 
 function selectedAnimation(){
     let textareaValue = document.getElementById("textarea");
-    let animationValue = document.getElementById("animation");
-    
+    let animationValue = document.getElementById("animation"); 
     if(animationValue.value == "Blank"){
         textareaValue.value = BLANK;
     }else if(animationValue.value == "Exercise"){

@@ -1,0 +1,25 @@
+label{
+    width: 50%;
+}
+input{
+    width: 80%;
+    background-color: green;
+}
+label{
+    color: red;
+}
+textarea{
+    width: 80%;
+    padding: 20px;
+    height: 400px;
+    resize: none;
+}
+p{
+    color: red;
+}
+.element_visable{
+    visibility: visible;
+}
+.element_invisable{
+    visibility: hidden;
+}
