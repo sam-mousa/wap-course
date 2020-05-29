@@ -1,7 +1,7 @@
 /**
-    I added some EXTRA function on requested Home work
-    I made check and Alearts for Empty or not a number of inputs
-    I made balance you can add deposit for it if the account name is already exist 
+    I added some EXTRA function on requested Homework
+    I made check and Alerts for Empty or not a number of inputs
+    I made balance you can add deposit for it if the account name is already existing.
 **/
 
 const AccountModule = (function() {
