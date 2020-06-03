@@ -4,7 +4,7 @@ $(document).ready(function(){
         var path = '../ajax_choice_list/src/' + $("#hw").val();
         alert($("#hw").val());
         $.ajax({
-            url: '../ajax_choice_list/src/song.text',
+            url: '../ajax_choice_list/src/song.txt',
             type: "GET",
             success: ajaxSuccess,
             error: ajaxFailure
