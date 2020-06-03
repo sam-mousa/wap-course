@@ -46,6 +46,20 @@
 			The puzzle was actually created around 1874 by Noyes Palmer Chapman,
 			a postmaster in Canastota, New York.
 		</p>
+		<p>
+			JavaScript doesn’t allow function overloading, if two functions has the same name and different arguments length/types, JavaScript interpreter will use the last definition always, however, jQuery seems like allow functions overloading with different arguments length/types, but actually it is still single function definition, and jQuery implementation check the arguments size, and arguments datatypes and act like an overloaded function based on that.
+			<br>
+			And it’s clear in this line of JQ source code
+			<br>
+			if ( typeof selector === "string" ) 
+			<br>
+			else if ( selector.nodeType )
+			<br>
+			else if ( typeof selector === "function" ) 
+			<br>
+			in blow link you can find the source code:
+			<a href="https://github.com/jquery/jquery/blob/40c3abd0ab049449acab5f2e12c34b9cc3199482/src/core/init.js#L30">this link</a>
+		</p>
 
         <div class="footer">
             <a href="http://validator.w3.org/check/referer"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="html validator"/></a>

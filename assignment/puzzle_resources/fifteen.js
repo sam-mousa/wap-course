@@ -3,7 +3,6 @@ var div;
 var spaceY;
 var spaceX;
 
-
 $(function () {
     var puzzleArea = $('#puzzlearea')[0];
 
