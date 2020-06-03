@@ -1,5 +1,5 @@
 $(function(){
-    $("#getBtn").click(function() {
+    $("#get").click(function() {
         var url = "http://jsonplaceholder.typicode.com/users/" + $("#userId").val();
         $.get(url).done(createInfo).fail(err);
     });
@@ -26,9 +26,9 @@ function getPosts(id){
 }
 
 function createPosts(data) {
-    $("#post").empty();
+    $("#posts").empty();
     for (let i = 0; i < data.length; ++i) {
-        $("<li>").text(data[i].body).attr("id", data[i].id).appendTo("#post");
+        $("<li>").text(data[i].body).attr("id", data[i].id).appendTo("#posts");
         let id = "#" + data[i].id;
         $('<button id="show'+id+'"></button>').text("Comments").click(getComment).appendTo(id);
     }
