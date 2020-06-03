@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<!-- Ryan Moussa -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comments</title>
+    <title>Posts And Comments</title>
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+    <script src="./getJS.js" type="text/javascript"></script>
 </head>
+
 <body>
-    <div>
-        <div>
-            
-        </div>
-    </div>
+<h3>Posts And Comments</h3>
+<div>
+    <span>User ID:</span>
+    <input id="userId" type="text" placeholder="ID"/>
+    <button id="getBtn">Get Data</button>
+    
+</div>
+<br>
+<div>
+    <textarea id="output" rows="8" cols="90"></textarea>
+</div>
+<h4>Posts: </h4>
+<div>
+    <ul id="post">
+    </ul>
+</div>
+<div id="errors">
+</div>
 </body>
+
 </html>
