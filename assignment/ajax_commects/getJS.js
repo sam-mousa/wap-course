@@ -15,10 +15,9 @@ function createInfo(data) {
         data.email +
         "\n" +
         "Address: " +
-        (data.address.street +" " + data.address.suite + " " + data.address.city + " " + data.address.zipcode + " " + data.address.geo.lat + " " + data.address.geo.lng + " ") + "\n";
+        (data.address.street +" " + data.address.suite + " " + data.address.city + " " + data.address.zipcode + " " + data.address.geo.lat + " " + data.address.geo.lng + " ");
     $("#output").append(info);
     getPosts(data.id);
-
 }
 
 function getPosts(id){
@@ -28,19 +27,10 @@ function getPosts(id){
 
 function createPosts(data) {
     $("#post").empty();
-    
     for (let i = 0; i < data.length; ++i) {
-        
-        $("<li>")
-            .text(data[i].body)
-            .attr("id", data[i].id)
-            .appendTo("#post");
-
+        $("<li>").text(data[i].body).attr("id", data[i].id).appendTo("#post");
         let id = "#" + data[i].id;
-        $('<button id="show'+id+'"></button>')
-            .text("Comments")
-            .click(getComment)
-            .appendTo(id);
+        $('<button id="show'+id+'"></button>').text("Comments").click(getComment).appendTo(id);
     }
 }
 function getComment() {

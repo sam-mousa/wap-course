@@ -5,7 +5,34 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    
   font-size: 1.5rem;
   background-color:GRAY;
+}
+input{
+	font-style: italic;
+	padding: 0px 0px 0px 0px;
+	background: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 1px dashed #83A4C5;
+	width: 275px;
+	overflow: hidden;
+	resize:none;
+	height:20px;
+}
+
+ textarea{
+    height: 90px;
+    padding: 15px;
+    resize: none;
+    font-size: 20px;
+    font-family: fantasy;
+    border: 1px #59bcef solid;
+    border-radius: 40px;
+    background-color: white;
+
+ } 
+ 
+ input:focus{
+	border-bottom: 1px dashed #D9FFA9;
 }
